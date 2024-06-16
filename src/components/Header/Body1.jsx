@@ -4,8 +4,14 @@ import Body2 from './Body2'
 function Body1() {
   return (
     <div class="">
-        <img class="w3-imagex" src={IMG} alt="deco home" width="1600" height="1060"/>
+       <div className="image">
+         <div className="textebody1">
+        hello
+      </div>
+      </div>
+   <div className="container">
    <Body2/>
+   </div>
     </div>
   )
 }
