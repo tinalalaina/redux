@@ -5,8 +5,8 @@ function Body1() {
   return (
     <div class="">
        <div className="image">
-         <div className="textebody1">
-        hello
+         <div className="textebody1 h1">
+         Interior Design
       </div>
       </div>
    <div className="">

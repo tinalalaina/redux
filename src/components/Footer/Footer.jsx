@@ -2,11 +2,11 @@ import React from 'react'
 import './Footer.css'
 function Footer() {
   return (
-    <div className='footer'>
+    <div className='footer' id="contact">
         <div className="row">
             <div className="col">
-                <div className="grostore">
-                   AcZone
+                <div className="grostore h1">
+                   TIMBER & TRENDS
                 </div></div>
             <div className="col">
                 <p className='foot1'>Quick Link</p>
@@ -24,7 +24,7 @@ function Footer() {
             </div>
             <div className="col">
                 <p  className='foot1'>Subscribe our Newsletter</p>
-                <p><input type="email" /></p>
+                <p><input type="email" className='form-control' /></p>
                 <p  className='foot2'>We accept Payment method</p>
             </div>
         </div>
