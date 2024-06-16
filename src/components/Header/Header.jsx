@@ -15,7 +15,7 @@ function Header() {
   
   
         <div class="links  me-auto h2"> 
-          <a href="#" className='homea'>Home</a>
+          <a href="#home" className='homea'>Home</a>
           <a href="#services"className='homea'>Services</a>
           <a href="#designers"className='homea'>Designers</a>
           
