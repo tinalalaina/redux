@@ -17,6 +17,10 @@ function Body2() {
           <img src={IMG2}  class='im'alt="Concrete meets bricks" />
         </div>
         
+       <div class=" w3-halfi">
+          <img src={IMG2}  class='im'alt="Concrete meets bricks" />
+        </div>
+        
        <div class="w3-halfi">
           <img src={IMG3} class='im'alt="Concrete meets bricks" />
         </div>
@@ -27,7 +31,6 @@ function Body2() {
        </div>
         
       </div>
-
       
       <Body3 />
         hle
