@@ -45,3 +45,13 @@
 .homea:hover{
 color:rgb(255, 0, 0);
 }
+.premierservice{
+    padding: 38px;
+}
+.servicehead{
+    color: red;
+    font-size: 4rem;
+}
+.textser{
+    font-size: 1rem;
+}
