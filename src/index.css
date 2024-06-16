@@ -14,6 +14,7 @@
 .incone1{
     margin: 16px;
 }
-.w3-halfi{width:49.99999%}
-
-
+.w3-halfi{width:49%;
+    padding:0px;
+    float:left;
+}
