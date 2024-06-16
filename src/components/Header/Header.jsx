@@ -14,12 +14,12 @@ function Header() {
         </div>
   
   
-        <div class="links  me-auto "> 
-          <a href="#">Home</a>
-          <a href="#services">Services</a>
-          <a href="#designers">Designers</a>
-          <a href="#packages">Packages</a>
-          <a href="#contact">Contact</a>
+        <div class="links  me-auto h2"> 
+          <a href="#" className='homea'>Home</a>
+          <a href="#services"className='homea'>Services</a>
+          <a href="#designers"className='homea'>Designers</a>
+          <a href="#packages"className='homea'>Packages</a>
+          <a href="#contact"className='homea'>Contact</a>
           
          </div>
          
