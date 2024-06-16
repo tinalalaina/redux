@@ -1,0 +1,15 @@
+.initheader{
+    padding-left: 19px;
+    height: 59px;
+    text-align: center;
+}
+.links a{
+    color:rgb(0, 0, 0);
+    margin:46px;
+}
+.incons{
+    display: flex;
+}
+.incone1{
+    margin: 16px;
+}
