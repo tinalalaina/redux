@@ -14,7 +14,13 @@
 .incone1{
     margin: 16px;
 }
-.w3-halfi{width:49%;
-    padding:0px;
+.w3-halfi{width:50%;
+    padding-left:45px;
+    padding-right:25px;
     float:left;
+    padding: 8px;
+    background: blue;
+}
+.body2{
+    padding: 18px;
 }
