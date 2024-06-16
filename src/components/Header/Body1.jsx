@@ -11,6 +11,7 @@ function Body1() {
       </div>
    <div className="container">
    <Body2/>
+   
    </div>
     </div>
   )

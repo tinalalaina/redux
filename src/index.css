@@ -14,9 +14,9 @@
 .incone1{
     margin: 16px;
 }
-.w3-halfi{width: 23.33%;
-    float:left;
-    margin: 3px
+.body3{
+    float: none;
+    
 }
 .image{
     background-image: url(./Photo/deco.png);
