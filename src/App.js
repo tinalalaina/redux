@@ -8,6 +8,7 @@ import AddProduct from './pages/AddProduct';
 
 import axios from 'axios';
 import Acceuille from './components/Acceuille/Acceuille';
+import Footer from './components/Footer/Footer'
 axios.defaults.withCredentials =true;
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/products/add' element={<AddProduct/>}/>
       </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   )
 }
