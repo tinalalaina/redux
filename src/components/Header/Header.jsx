@@ -24,7 +24,7 @@ function Header() {
          </div>
          
         <div class=" mb-lg-0">
-          hello
+          <button className='bgs'> Sign in</button>
         </div>
   
   
