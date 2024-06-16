@@ -2,4 +2,11 @@
 .w3-halfi{width: 32%;
     margin: 3px;
     height: auto;
+    border-radius: 8px;
+}
+.im{
+    border-radius: 8px;
+}
+.body2{
+    padding: 40px;
 }
