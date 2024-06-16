@@ -4,6 +4,7 @@ import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { LoginUser, reset } from '../features/authSlice';
+import Login2 from "./Login2";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,6 +28,7 @@ const Login = () => {
   
   return (
     <section className="hero has-background-grey-light is-success is-fullheight is-fullwidth">
+      <Login2/>
       <div className="hero-body">
         <div className="container">
          <div className="columns is-centered">
