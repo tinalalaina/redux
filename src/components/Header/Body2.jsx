@@ -11,17 +11,11 @@ function Body2() {
        <div class="card w3-halfi">
           <img src={IMG2} alt="Concrete meets bricks" />
         </div>
-        <div class="card w3-halfi">
-          <img src={IMG2} alt="Concrete meets bricks" />
-        </div>
-        <div class="card w3-halfi">
+       <div class="card w3-halfi">
           <img src={IMG2} alt="Concrete meets bricks" />
         </div>
         
-        <div class="card w3-halfi">
-          <img src={IMG2} alt="Concrete meets bricks" />
-        </div>
-        <div class="card w3-halfi">
+       <div class="card w3-halfi">
           <img src={IMG2} alt="Concrete meets bricks" />
         </div>
        </div>
