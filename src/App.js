@@ -7,12 +7,14 @@ import Products from './pages/Products';
 import AddProduct from './pages/AddProduct';
 
 import axios from 'axios';
+import Acceuille from './components/Acceuille/Acceuille';
 axios.defaults.withCredentials =true;
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Routes>
+        <Route path='/acceuille' element={<Acceuille/>}/>
         <Route path='/' element={<Login/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/users' element={<Users/>}/>
