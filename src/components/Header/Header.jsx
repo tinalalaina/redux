@@ -18,8 +18,6 @@ function Header() {
           <a href="#" className='homea'>Home</a>
           <a href="#services"className='homea'>Services</a>
           <a href="#designers"className='homea'>Designers</a>
-          <a href="#packages"className='homea'>Packages</a>
-          <a href="#contact"className='homea'>Contact</a>
           
          </div>
          

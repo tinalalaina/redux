@@ -1,6 +1,7 @@
 import React from 'react'
 import IMG from'../../Photo/deco.png'
 import Body2 from './Body2'
+import Designers from './Designers'
 import Service from './Service'
 function Body1() {
   return (
@@ -11,10 +12,8 @@ function Body1() {
       </div>
       </div>
       <Service/>
-   <div className="">
    <Body2/>
-   
-   </div>
+   <Designers/>
     </div>
   )
 }
