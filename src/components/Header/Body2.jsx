@@ -32,8 +32,6 @@ function Body2() {
         
       </div>
       
-      <Body3 />
-        hle
     </div>
   )
 }

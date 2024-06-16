@@ -9,7 +9,7 @@ function Body1() {
         hello
       </div>
       </div>
-   <div className="container">
+   <div className="">
    <Body2/>
    
    </div>
