@@ -1,25 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { useNavigate, useParams } from 'react-router-dom';
-const FormEditUser = () => {
+const FormEditProduct = () => {
     const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confPassword, setConfPassword] = useState("");
-    const [role, setRole] = useState("");
+    const [price, setPrice] = useState("");
     const [msg, setMsg] = useState("");
     const navigate = useNavigate();
     const { id } = useParams();
     useEffect(() => {
-        const getUserById = async () => {
+        const getProductById = async () => {
             try {
                 const response = await
-                    axios.get(`http://localhost:5000/users/${id}`);
+                    axios.get(`http://localhost:5000/products/${id}`);
                 setName(response.data.name);
-                setEmail(response.data.email);
-                setPassword(response.data.password);
-                setConfPassword(response.data.confPassword);
-                setRole(response.data.role);
+                setPrice(response.data.price)
             }
             catch (error) {
                 if (error.response) {
@@ -27,19 +21,17 @@ const FormEditUser = () => {
                 }
             }
         };
-        getUserById();
+        getProductById();
     }, [id]);
-    const updateUser = async (e) => {
+    const updateProduct = async (e) => {
         e.preventDefault();
         try {
-            await axios.patch(`http://localhost:5000/users/${id}`, {
-                name: name,
-                email: email,
-                password: password,
-                confPassword: confPassword,
-                role: role
-            });
-            navigate("/users");
+            await
+                axios.patch(`http://localhost:5000/products/${id}`, {
+                    name: name,
+                    price: price
+                });
+            navigate("/products");
         } catch (error) {
             if (error.response) {
                 setMsg(error.response.data.msg);
@@ -48,64 +40,35 @@ const FormEditUser = () => {
     }
     return (
         <div>
-            <h1 className='title'>Utilisateurs</h1>
-            <h2 className='subtitle'>Modifier l'utilisateurs</h2>
+            <h1 className='title'>Produit</h1>
+            <h2 className='subtitle'>Modifier un produit</h2>
             <div className="card is-shadowless">
                 <card-content>
                     <div className="content">
-                        <form onSubmit={updateUser}>
+                        <form onSubmit={updateProduct}>
                             <p className='has-text-centered'>{msg}</p>
                             <div className="field">
                                 <label className="label"> Nom </label>
                                 <div className="control">
                                     <input type="text" className="input"
-                                        value={name} onChange={(e) => setName(e.target.value)}
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
                                         placeholder='NOM' />
                                 </div>
                             </div>
                             <div className="field">
-                                <label className="label"> Email </label>
+                                <label className="label"> Prix </label>
                                 <div className="control">
                                     <input type="text" className="input"
-                                        value={email} onChange={(e) => setEmail(e.target.value)}
-                                        placeholder='Email' />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <label className="label">Confirm Password
-                                </label>
-                                <div className="control">
-                                    <input type="password" className="input"
-                                        value={password} onChange={(e) => setPassword(e.target.value)}
-                                        placeholder='******' />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <label className="label"> Password </label>
-                                <div className="control">
-                                    <input type="password" className="input"
-                                        value={confPassword}
-                                        onChange={(e) => setConfPassword(e.target.value)}
-                                        placeholder='******' />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <label className="label"> Role</label>
-                                <div className="control">
-                                    <div className="select is-fullwidth">
-                                        <select value={role}
-                                            onChange={(e) => setRole(e.target.value)}>
-                                            <option value=""> ...</option>
-                                            <option value="admin"> Admin</option>
-                                            <option value="user"> User</option>
-                                        </select>
-                                    </div>
+                                        value={price}
+                                        onChange={(e) => setPrice(e.target.value)}
+                                        placeholder='price' />
                                 </div>
                             </div>
                             <div className='field'>
                                 <div className="control">
                                     <button type="submit" className="button is-success">
-                                        Modifier
+                                        Enregistrer
                                     </button>
                                 </div>
                             </div>
@@ -116,4 +79,4 @@ const FormEditUser = () => {
         </div>
     )
 }
-export default FormEditUser;
+export default FormEditProduct

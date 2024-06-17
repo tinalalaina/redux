@@ -24,7 +24,7 @@ const ProductLists = () => {
             <table className='table is-striped is-fullwidth'>
                 <thead>
                     <tr>
-                        <th>No</th>
+                    <th>N°</th>
                         <th>Nom du produits</th>
                         <th>Prix</th>
                         <th>Créer par</th>

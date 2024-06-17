@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './Layout';
-import FormEditUser from '../components/FormEditUser';
+import FormEditUser from './FormEditUser';
 const EditUser = () => {
 return (
 <Layout>
