@@ -13,10 +13,15 @@ const ProductLists = () => {
         const response = await axios.get('http://localhost:5000/products');
     setProducts(response.data);
     }
+    const deleteProduct = async (productId)=>{
+        await axios.delete('http://localhost:5000/products/${productId}');
+        getProducts();
+    }
   return (
     <div>
            <h1 className='title'>Produits</h1>
         <h2 className='subtitle'>Liste des produits</h2>
+        <Link to="/products/add" className='button is-primary mb-2'>Ajouter un produit</Link>
         <table className='table is-striped is-fullwidth'>
             <thead>
                 <tr>
@@ -33,10 +38,11 @@ const ProductLists = () => {
   <td>{index + 1}</td>
   <td>{product.name}</td>
   <td>{product.price}</td>
-  <td>{product.user}</td>
+  <td>{product.user.name}</td>
   <td>
-    <Link to={'/products/edit/${product.uuid'} className="button is-small is-info">Edit</Link>
-     </td>
+    <Link to={'/products/edit/${product.uuid}'} className="button is-small is-info">Modifier</Link>
+    <buttom onClick={()=> deleteProduct(product.uuid)} className="button is-small is-danger">Supprimer</buttom>
+   </td>
 </tr>
                 ))}
               
