@@ -33,7 +33,7 @@ const ProductLists = () => {
   <td>{index + 1}</td>
   <td>{product.name}</td>
   <td>{product.price}</td>
-  <td>{product.user.name}</td>
+  <td>{product.user}</td>
   <td>
     <Link to={'/products/edit/${product.uuid'} className="button is-small is-info">Edit</Link>
      </td>
