@@ -35,7 +35,7 @@ const Login = () => {
             <div className="column is-4">
                 
                 <form className="box" onSubmit={Auth}>
-                <h1 className="title is-2 has-background-grey-light">Sign in!</h1>
+                <center><h1 className="title is-2 has-background-grey-light">Sign in!</h1></center>
                   {isError && <p className='has-text-centered is-2 has-background-grey-light'>{message}</p>}
                     <div className="field">
                         <label className="label"> Email </label>
@@ -64,6 +64,11 @@ const Login = () => {
             </div>
          </div>
         </div>
+      </div>
+      <div className="container">
+       <div className='fw-bold'>Aide:</div>
+       <div>Email: tinalalaina14@gmail.com</div>
+       <div>password: 123456</div>
       </div>
     </section>
   )

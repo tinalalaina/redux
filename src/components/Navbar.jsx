@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../logo.jpg";
+import { useSelector, UseSelector } from 'react-redux';
 
 const Navbar = () => {
+  const {user} = useSelector((state) => state.auth);
   return (
     <div><nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -23,7 +25,7 @@ const Navbar = () => {
           <div className="navbar-item">
             <div className="buttons">
               <button className="button is-light">
-                Log out
+              <strong>{user && user.name}</strong>
               </button>
             </div>
           </div>
